@@ -1,17 +1,15 @@
-import FirstChild from "./FirstChild";
-import SecondChild from "./SecondChild";
-import ThirdChild from "./ThirdChild";
+function MyFirstComponent(props){
+    const {name,age} = props;
+    console.log(name);
+    console.log(age);
 
-
-function MyFirstComponent(){
-    return (
+    return(
         <>
-        <h2> I am inside of MyFirstComponent</h2>;
-        <FirstChild />
-        <SecondChild />
-        <ThirdChild />
-         </>
-        );
-    };
+    <h2>
+        Hello I am {name}, I am {age} years old and I am inside of MyFirstComponent
+    </h2>;
+    </>
+    )
+    }
 
     export default MyFirstComponent;
